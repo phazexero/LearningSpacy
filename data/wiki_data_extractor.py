@@ -2,7 +2,7 @@ import bs4
 import sys
 import requests
 
-wiki_page = 'United States'
+wiki_page = 'india'
 res = requests.get(f'https://en.wikipedia.org/wiki/{wiki_page}' )
 res.raise_for_status()
 wiki = bs4.BeautifulSoup(res.text,"html.parser")
